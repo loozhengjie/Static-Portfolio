@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LZJ Static Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+</head>
+
+<body>
+   <header class="navbar">
+      <nav class="navbar__container">
+         <div class="navbar__logo-container">
+            <img class="navbar__logo" src="img/logo_crt.png" width="98.4" height="126.2">
+            <img class="navbar__logo-text" src="img/logo_text_crt.png" width="138.6" height="25.3">
+         </div>
+         <ul class="navbar__menu">
+            <li class="navbar__item"><a href="#hero">[HOME]</a></li>
+            <li class="navbar__item"><a href="#about-me">[ABOUT-ME]</a></li>
+            <li class="navbar__item"><a href="#skillsets">[SKILLSETS]</a></li>
+            <li class="navbar__item"><a href="#projects">[PROJECTS]</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <section class="hero" id="hero">
+      <div class="hero__container">
+         <div class="hero__texts">
+            <h1 class="hero__title">Hi! I am Zheng-Jie!</h1>
+            <h2 class="hero__subtitle">A Passionate Programmer_</h2>
+            <p class="hero__description">I believe that the will to learn and a good problem solving skills are the core foundations of a successful programmer.</p>   
+            <div class="hero__action-button-container">
+               <a href="https://github.com/loozhengjie" target="_blank" rel="noopener noreferrer"><button class="hero__action-button">&gt; Github</button></a>
+               <button class="hero__action-button">&gt; LinkedIn</button>
+               <button class="hero__action-button">&gt; Resume</button>
+            </div>
+         </div>
+         <div class="hero__picture-wrapper">
+            <img class="hero__picture" src="img/profile-pic.png" alt="profile-pic-crt-version" >
+         </div>
+      </div>
+   </section>
+
+   <section class="about-me" id="about-me">
+      <div class="about-me__container">
+         <h2>About-me</h2>
+         <div class="about-me__description-container">
+            <p>Currently working as:</p> 
+            <ul class="about-me__description-list">
+               <li class="about-me__description-item">&gt; Gameplay programmer @ Nimbus Games</li>
+            </ul>
+
+            <p>Education</p> 
+            <ul class="about-me__description-list">
+               <li class="about-me__description-item">&gt; University of Wollongong Malaysia (UOW Malaysia) - Bachelor of Game Development (Honours) [2020-2023]</li>
+               <li class="about-me__description-item">&gt; University of Wollongong Malaysia (UOW Malaysia) - Foundation Studies (Art and Technology) [2019-2020]</li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <section class="skillsets" id="skillsets">
+      <div class="skillsets__container">
+         <h2> Skillsets </h2>
+         <div class="skillsets__lists">
+            <div class="skillsets__item">C++</div>
+            <div class="skillsets__item">C#</div>
+            <div class="skillsets__item">HTML</div>
+            <div class="skillsets__item">CSS</div>
+            <div class="skillsets__item">Javascript</div>
+            <div class="skillsets__item">Figma</div>
+            <div class="skillsets__item">Unreal Engine</div>
+            <div class="skillsets__item">Unity</div>
+         </div>
+      </div>
+   </section>
+
+   <section class="projects" id="projects">
+      <div class="projects__container">
+         <h2> Projects </h2>
+         <div class="projects__cards-container">
+
+            <article class="projects__card-item">
+               <figure class="projects__card-figure-container">
+                  <img class="projects__card-image" src="img/chiyo_banner_crt.png" width="246" height="133.2">
+                  <figcaption class="projects__card-title">Chiyo <a>[link to project]</a></figcaption>
+               </figure>
+
+               <ul class="projects__skill-list">
+                  <li class="projects__skill-item">Unreal Engine</li>
+                  <li class="projects__skill-item">10+ person</li>
+                  <li class="projects__skill-item">1 year</li>
+                  <li class="projects__skill-item">Porting</li>
+                  <li class="projects__skill-item">Gameplay / Mechanics</li>
+               </ul>
+            </article>
+
+            <article class="projects__card-item">
+               <figure class="projects__card-figure-container">
+                  <img class="projects__card-image" src="img/other_life_banner_crt.png" width="246" height="133.2">
+                  <figcaption class="projects__card-title">Other Life <a>[link to project]</a></figcaption>
+               </figure>
+
+               <ul class="projects__skill-list">
+                  <li class="projects__skill-item">Unreal Engine</li>
+                  <li class="projects__skill-item">9 person</li>
+                  <li class="projects__skill-item">6 months</li>
+                  <li class="projects__skill-item">Gameplay / Mechanics</li>
+               </ul>
+            </article>
+
+            <article class="projects__card-item">
+               <figure class="projects__card-figure-container">
+                  <img class="projects__card-image" src="img/ronin_banner_crt.png" width="246" height="133.2">
+                  <figcaption class="projects__card-title">Ronin <a>[link to project]</a></figcaption>
+               </figure>
+
+               <ul class="projects__skill-list">
+                  <li class="projects__skill-item">Unity</li>
+                  <li class="projects__skill-item">C#</li>
+                  <li class="projects__skill-item">7 person</li>
+                  <li class="projects__skill-item">3 months</li>
+                  <li class="projects__skill-item">Gameplay / Mechanics</li>
+               </ul>
+            </article>
+
+            <article class="projects__card-item">
+               <figure class="projects__card-figure-container">
+                  <img class="projects__card-image" src="img/contriver_banner_crt.png" width="246" height="133.2">
+                  <figcaption class="projects__card-title">Contriver <a>[link to project]</a></figcaption>
+               </figure>
+
+               <ul class="projects__skill-list">
+                  <li class="projects__skill-item">Unity</li>
+                  <li class="projects__skill-item">C#</li>
+                  <li class="projects__skill-item">8 person</li>
+                  <li class="projects__skill-item">3 months</li>
+                  <li class="projects__skill-item">Gameplay / Mechanics</li>
+               </ul>
+            </article>
+
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="footer__container">
+         <div class="footer__image-wrapper">
+            <img class="footer__image" alt="footer-image" src="img/logo.png">      
+         </div>
+         <p class="footer__details">@ 2024_Designed in Figma by Loo Zheng-Jie</p>
+      </div>
+   </footer>
+
+</body>
+</html>
