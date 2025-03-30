@@ -1,15 +1,18 @@
+/* CSS reset */
 *, 
 *::before,
 *::after{
     box-sizing: border-box;
 }
 
+/* Variables */
 :root{
     --programming-font: 'Fira Code', Consolas, monaco, monospace;
     --programming-green: #46FC46;
     --programming-white: white;
 }
 
+/* Base layout setup */
 body{
     background-color: black;
     color: var(--programming-green);
@@ -17,6 +20,7 @@ body{
     font-weight: 1px;
 }
 
+/* Navbar */
 .navbar__container{
     /* border: 1px solid white; */
     display: flex;
@@ -63,7 +67,7 @@ body{
     color: white; 
 }
 
-
+/* Hero */
 .hero__container{
     /* border: 1px solid white; */
     display: flex;
@@ -120,6 +124,7 @@ body{
     cursor: pointer;
 }
 
+/* About-me */
 .about-me__container{
     display: flex;
     flex-flow: column nowrap;
@@ -139,6 +144,7 @@ body{
     list-style: none;
 }
 
+/* Skillsets */
 .skillsets__container{
     display: flex;
     flex-flow: column wrap;
@@ -163,6 +169,7 @@ body{
     text-align: center;
 }
 
+/* Projects */
 .projects__container{
     display: flex;
     flex-flow: column wrap;
@@ -194,6 +201,11 @@ body{
     width: 100%;
 }
 
+.projects__card-title a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .projects__card-image{
     height: auto;
     max-width: 100%;
@@ -215,6 +227,7 @@ body{
     padding: 0 1em 0 1em;
 }
 
+/* Footer */
 .footer__container{
     display: flex;
     flex-flow: row nowrap;
@@ -240,13 +253,21 @@ body{
     font-size: clamp(0.6em, 0.5rem + 1vw, 1.0rem);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
+
     .navbar__container{
         flex-flow: column nowrap;
         gap: 0px;
         align-items: normal;
-
     } 
+
+    .navbar_menu{
+        position: sticky;
+        overflow: visible;
+        top:0;
+        gap: 0px;
+    }
 
     .hero__container{
         flex-flow: column nowrap;
@@ -259,14 +280,9 @@ body{
     .hero__picture-wrapper{
         flex-grow: 0;
         flex-basis: 0;
-    }
+        border: 1px solid white;
+        margin-top: 15px;  
 
-    .navbar__menu{
-        gap: 0px;
-    }
-
-    .hero__picture-wrapper{
-       margin-top: 15px;    
     }
 
     .hero__action-button-container{
@@ -279,6 +295,7 @@ body{
         gap: 16px;
         width: 100%;
     }
+
 }
 
 @media (max-width: 375px) {
