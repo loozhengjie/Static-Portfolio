@@ -20,9 +20,19 @@ body{
     font-weight: 1px;
 }
 
-
 .title{
     margin-top: 0;
+}
+
+/* Scrollbar setup */
+::-webkit-scrollbar-thumb {
+    background: var(--programming-green);
+    border-radius: 0.5px;
+}
+
+*{
+    scrollbar-color: var(--programming-green) #222;
+    scrollbar-width: thin;
 }
 
 
@@ -167,6 +177,11 @@ body{
     list-style: none;
 }
 
+.about-me a{
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Skillsets */
 .skillsets__container{
     display: flex;
@@ -257,11 +272,11 @@ body{
 .footer__container{
     display: flex;
     flex-flow: row nowrap;
-    padding: 0 2em 0 2em;
+    padding: 1em 2em 1em 2em;
     width: 100%;
     align-items: center;
     gap: 10px;
-    border: 0.5px solid white;
+    border: 2px solid white;
 }
 
 .footer__image-wrapper{
