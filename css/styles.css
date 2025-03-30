@@ -18,19 +18,24 @@ body{
     color: var(--programming-green);
     font-family: var(--programming-font);
     font-weight: 1px;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px
 }
+
+
+.title{
+    margin-top: 0;
+}
+
 
 /* Navbar */
 .navbar__container{
     display: flex;
-    flex-flow: col nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: normal;
     padding: 2em 2em 0 2em;
-    gap: 30px;
+    gap: 5px;
+    border: 2px solid var(--programming-green);
+    margin: 10px 0px 10px 0px;
     /* border-bottom: 2.5px dotted var(--programming-green); */
 
 }
@@ -79,7 +84,8 @@ body{
     padding: 2em 2em 1em 2em;
     gap: 15px;
     border: 2px solid var(--programming-green);
-    /* border-bottom: 2.5px dotted var(--programming-green); */
+    margin: 0px 0px 10px 0px;
+
 }
 
 .hero__picture-wrapper{
@@ -140,6 +146,7 @@ body{
     align-items: flex-start;
     padding: 2em;
     border: 2px solid var(--programming-green);
+    margin: 10px 0px 10px 0px;
 }
 
 .about-me__description-title{
@@ -168,6 +175,7 @@ body{
     align-items: flex-start;
     padding: 2em;
     border: 2px solid var(--programming-green);
+    margin: 10px 0px 10px 0px;
 }
 
 .skillsets__lists{
@@ -193,6 +201,8 @@ body{
     width: 100%;
     /* border-top: 2px dotted var(--programming-green); */
     border: 2px solid var(--programming-green);
+    margin: 10px 0px 10px 0px;
+
 }
 
 .projects__cards-container{
@@ -247,10 +257,11 @@ body{
 .footer__container{
     display: flex;
     flex-flow: row nowrap;
-    padding: 2em 2em 0 2em;
+    padding: 0 2em 0 2em;
     width: 100%;
     align-items: center;
     gap: 10px;
+    border: 0.5px solid white;
 }
 
 .footer__image-wrapper{
