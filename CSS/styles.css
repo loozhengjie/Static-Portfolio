@@ -75,7 +75,7 @@ body{
     align-items: flex-start;
     padding: 2em 2em 1em 2em;
     gap: 15px;
-    border-bottom: 2.5px dotted var(--programming-green);
+    /* border-bottom: 2.5px dotted var(--programming-green); */
 }
 
 .hero__picture-wrapper{
@@ -135,7 +135,8 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     padding: 2em;
-    border-bottom: 2.5px dotted var(--programming-green);
+    border-top: 2px dotted var(--programming-green);
+    border-bottom: 2px dotted var(--programming-green);
 }
 
 .about-me__description-title{
@@ -163,7 +164,6 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     padding: 2em;
-    border-bottom: 2.5px dotted var(--programming-green);
 }
 
 .skillsets__lists{
@@ -187,6 +187,8 @@ body{
     flex-flow: column wrap;
     padding: 2em;
     width: 100%;
+    border-top: 2px dotted var(--programming-green);
+
 }
 
 .projects__cards-container{
