@@ -20,8 +20,16 @@ body{
     font-weight: 1px;
 }
 
+/* Utility classes */
 .title{
     margin-top: 0;
+}
+
+.link{
+    background-color: #A1FEA1;
+    color: #1D4B1D;
+    text-decoration: none;
+    padding: 0px 0px;
 }
 
 /* Scrollbar setup */
@@ -56,27 +64,25 @@ body{
     justify-content: center;
     align-items: center;
     padding: 1em 0 1em 0;
-    /* margin: auto; */
 }
 
 .navbar__menu{
-    border: 1px solid var(--programming-green);
+    /* border: 1px solid var(--programming-green); */
     display: flex;
     flex-flow: row nowrap;
     gap: 20px;
-    justify-content: space-between;
-    padding: 1em;
+    justify-content: space-evenly;
+    padding: 0.5em 1em;
     flex-grow: 2;
 }
 
 .navbar__item{
     list-style: none;
-    font-size: clamp(0.5em, 0.5rem + 0.6vw, 2.0rem);
-}
-
-.navbar__item a{
-   color: inherit;
-   text-decoration: none;
+    font-size: clamp(0.5em, 0.5rem + 0.5vw, 2.0rem);
+    background-color: #A1FEA1;
+    color: #1D4B1D;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .navbar__item a:active {
@@ -128,7 +134,7 @@ body{
 .hero__action-button-container{
     display: flex;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 10px;
 }
 
 .hero__action-button{
@@ -139,13 +145,9 @@ body{
     font-family: var(--programming-font);
     font-size: clamp(0.7em, 0.8rem + 1vw, 2.0rem);
     cursor: pointer;
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
-.hero__action-button a{
-    color: inherit;
-    text-decoration: none;
-}
 
 /* About-me */
 .about-me__container{
@@ -177,7 +179,6 @@ body{
 }
 
 .about-me a{
-    color: inherit;
     text-decoration: none;
 }
 
@@ -240,11 +241,7 @@ body{
 
 .projects__card-title{
     width: 100%;
-}
-
-.projects__card-title a{
-    color: inherit;
-    text-decoration: none;
+    margin-top: 5px;
 }
 
 .projects__card-image{
@@ -305,10 +302,11 @@ body{
     } 
 
     .navbar__menu{
-        justify-content: space-evenly;
-        top: 0;    
-        gap: 5px;
-        padding: 5px 5px 5px 0px;
+        padding: 0px;
+    }
+
+    .navbar__item{
+        flex-grow: 1;
     }
 
     .hero__container{
@@ -326,7 +324,7 @@ body{
     }
 
     .hero__action-button-container{
-        gap: 20px;
+        gap: 10px;
     }  
 
     .projects__cards-container{
