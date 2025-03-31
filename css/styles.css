@@ -35,7 +35,6 @@ body{
     scrollbar-width: thin;
 }
 
-
 /* Navbar */
 .navbar__container{
     display: flex;
@@ -64,15 +63,15 @@ body{
     border: 1px solid var(--programming-green);
     display: flex;
     flex-flow: row nowrap;
-    gap: 30px;
-    justify-content: space-evenly;
-    padding: 5px 5px 5px 0px;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 1em;
     flex-grow: 2;
 }
 
 .navbar__item{
     list-style: none;
-    font-size: clamp(0.5em, 0.5rem + 0.5vw, 1.0rem);
+    font-size: clamp(0.5em, 0.5rem + 0.6vw, 2.0rem);
 }
 
 .navbar__item a{
@@ -306,8 +305,10 @@ body{
     } 
 
     .navbar__menu{
+        justify-content: space-evenly;
         top: 0;    
         gap: 5px;
+        padding: 5px 5px 5px 0px;
     }
 
     .hero__container{
